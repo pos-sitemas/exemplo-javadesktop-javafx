@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="545.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.unirn.exemplofx.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="181.0" layoutY="139.0" onAction="#handleButtonAction" text="Click Me!" />
+        <Label fx:id="label" layoutX="181.0" layoutY="169.0" minHeight="16" minWidth="69" />
+      <TextField fx:id="txtNome" layoutX="14.0" layoutY="24.0" />
+      <Button layoutX="201.0" layoutY="24.0" mnemonicParsing="false" onAction="#showMessage" text="Mensagem" />
+      <ComboBox fx:id="cmbPessoa" layoutX="14.0" layoutY="73.0" prefHeight="27.0" prefWidth="167.0" />
+      <TableView fx:id="tblPessoa" layoutX="14.0" layoutY="178.0" prefHeight="113.0" prefWidth="439.0">
+        <columns>
+          <TableColumn fx:id="colNome" prefWidth="156.0" text="Nome" />
+          <TableColumn fx:id="colTelefone" minWidth="0.0" prefWidth="129.0" text="Telefone" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtContatoNome" layoutX="54.0" layoutY="334.0" prefHeight="27.0" prefWidth="278.0" />
+      <Text layoutX="14.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" />
+      <Text layoutX="12.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail:" />
+      <TextField fx:id="txtContatoEmail" layoutX="54.0" layoutY="365.0" prefHeight="27.0" prefWidth="278.0" />
+      <Button layoutX="343.0" layoutY="332.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="58.0" prefWidth="59.0" text="Salvar" />
+      <TableView fx:id="tblContato" layoutX="14.0" layoutY="401.0" prefHeight="113.0" prefWidth="537.0">
+        <columns>
+          <TableColumn fx:id="colContatoID" prefWidth="43.0" text="ID" />
+          <TableColumn fx:id="colContatoNome" prefWidth="170.0" text="Nome" />
+            <TableColumn fx:id="colContatoEmail" prefWidth="138.0" text="E-mail" />
+            <TableColumn fx:id="colContatoDataCadastro" prefWidth="185.0" text="Data Cadastro" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>
